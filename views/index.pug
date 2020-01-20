@@ -2,6 +2,29 @@ doctype html
 html
 	head
 		title Eduardo Mtnez
+	link(rel='stylesheet', href='/css/all.css')
+	link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
+	link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic")
 	link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
 	link(rel='stylesheet', href='/css/styles.css')
-	body
+	
+	body.page-top
+		nav.navbar.navbar-expand-lg.bg-nav.fixed-top.text-uppercase#mainNav
+			div.container
+				a.navbar-brand(href="#") START BOOTSTRAP
+				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+					| MENU 
+					i.fas.fa-bars
+				div.collapse.navbar-collapse#navbarNav
+					ul.navbar-nav
+						li.nav-item.mx-lg-1
+							a.nav-link.py-3.px-lg-3(href="#") Portfolio
+						li.nav-item.mx-lg-1
+							a.nav-link.py-3.px-lg-3(href="#") About
+						li.nav-item.mx-lg-1
+							a.nav-link.py-3.px-lg-3(href="#") Contact
+		header
+
+		script(src="/js/jquery.min.js")
+		script(src="/js/jquery.aesing.min.js")
+		script(src="/bootstrap/js/bootstrap.bundle.min.js")

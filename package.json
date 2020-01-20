@@ -1,0 +1,25 @@
+{
+  "name": "uv-landing-page",
+  "version": "0.0.0",
+  "description": "> Landing Page Practice to United Virtualities' training process.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmartinez-uv/landingPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmartinez-uv/landingPage/issues"
+  },
+  "homepage": "https://github.com/jmartinez-uv/landingPage#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "node-sass-middleware": "^0.11.0",
+    "pug": "^2.0.4"
+  }
+}

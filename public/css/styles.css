@@ -1,8 +1,18 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
 
+h1 {
+	font-weight: 700;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.25rem;
+}
 
 #mainNav {
 	background: #2c3e50;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	padding: 1rem;
 }
@@ -10,6 +20,7 @@
 .navbar-brand, .navbar-nav .nav-link, .navbar-brand:hover {
 	color:white;
 }
+
 .navbar-collapse {
 	float: right;
 }
@@ -33,8 +44,36 @@ button.navbar-toggler:hover {
 
 header {
 	background: #1abc9c!important;
-	height: 500px;
+	color:white;
+	padding-top: calc(6rem + 104px);
+	padding-bottom: 6rem;
 }
+
+header div img {
+	width: 15rem;
+}
+
+header h1 {
+	font-size: 2.75rem;
+	margin-bottom: 0;
+	line-height: 3.5rem;
+}
+
+.divider {
+	margin: 1.25rem 0 1.5rem;
+	font-size: 2rem;
+}
+.divider div:nth-child(2) {
+	margin:0 1rem;
+}
+
+.line {
+	width: 7rem;
+	height: .25rem;
+	border-radius: 1rem;
+	background: white;
+}
+
 
 @media (min-width: 992px) {
 	#mainNav .navbar-brand {
@@ -47,5 +86,12 @@ header {
 	}
 	.navbar-expand-lg .navbar-collapse {
 		flex-flow: row-reverse;
+	}
+
+	header h1 {
+		font-size: 4rem;
+	}
+	.subtitle {
+		font-size: 1.5rem;
 	}
 }

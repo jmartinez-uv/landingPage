@@ -1,17 +1,15 @@
 body{
-	font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-	font-weight: 700;
-}
-
-p {
 	font-family: 'Lato', sans-serif;
-	font-size: 1.25rem;
+}
+
+h1,h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
 }
 
 #mainNav {
+	font-family: 'Montserrat', sans-serif;
 	background: #2c3e50;
 	font-weight: 700;
 	padding: 1rem;
@@ -74,6 +72,90 @@ header h1 {
 	background: white;
 }
 
+.subtitle {
+	font-size: 1.25rem;
+}
+
+section {
+	padding: 6rem 0;
+}
+
+#portfolio {
+	color: #2c3e50;
+}
+
+#portfolio .divider .line {
+	background: #2c3e50;
+}
+
+.launcher {
+	max-width: 25rem;
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.portfolio-item {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-in-out;
+	opacity: 0;
+	background-color: rgba(26,188,156,0.9);
+}
+.portfolio-item:hover {
+	opacity: 1;
+}
+
+.portfolio-icon {
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: white;
+}
+
+.modal-content {
+	border-radius: .75rem;
+}
+
+.modal-dialog button.close {
+	position: absolute;
+	top: 1rem;
+	right: 1.5rem;
+	font-size: 3rem;
+	z-index: 1;
+	color: #1abc9c;
+	line-height: 3rem;
+	opacity: 1;
+}
+
+.modal-title {
+	font-size: 2.25rem;
+	line-height: 2rem;
+}
+
+.modal-body {
+	padding: 4rem 1rem;
+}
+
+.modal-body button {
+	background: #1abc9c;
+	color: white;
+	border-radius: .5rem;
+	border: 2px solid #1abc9c;
+}
+
+.modal-body .close:hover {
+	opacity: .75;
+}
+
+.modal-body button:hover {
+	background: #159a80;
+	color: white;
+	border-color: #159a80;
+}
+
 
 @media (min-width: 992px) {
 	#mainNav .navbar-brand {
@@ -93,5 +175,10 @@ header h1 {
 	}
 	.subtitle {
 		font-size: 1.5rem;
+	}
+
+	.modal-title {
+		font-size: 3rem;
+		line-height: 2.5rem;
 	}
 }

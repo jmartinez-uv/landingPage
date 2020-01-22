@@ -1,4 +1,4 @@
-body{
+body {
 	font-family: 'Lato', sans-serif;
 }
 
@@ -40,7 +40,7 @@ button.navbar-toggler:hover {
 	color:#1abc9c;
 }
 
-header {
+header, #about {
 	background: #1abc9c!important;
 	color:white;
 	padding-top: calc(6rem + 104px);
@@ -72,7 +72,7 @@ header h1 {
 	background: white;
 }
 
-.subtitle {
+.subtitle, .about-context {
 	font-size: 1.25rem;
 }
 
@@ -154,6 +154,26 @@ section {
 	background: #159a80;
 	color: white;
 	border-color: #159a80;
+}
+
+#about {
+	padding-top: 6rem;
+}
+
+/*#about div div:nth-child(2) div p {
+	max-width: 25rem;
+}*/
+
+.btn-dl {
+	background: #1abc9c;
+	border: 2px solid white;
+	color: white;
+	padding: 1rem 1.75rem;
+	font-size: 1.25rem;
+}
+
+.btn-dl:hover {
+	background: white;
 }
 
 

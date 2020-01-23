@@ -2,10 +2,16 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-h1,h2 {
+h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 3rem;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 #mainNav {
@@ -36,7 +42,7 @@ button.navbar-toggler:hover {
 	background-color: #148f77!important;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover, .footer-text a {
 	color:#1abc9c;
 }
 
@@ -80,11 +86,11 @@ section {
 	padding: 6rem 0;
 }
 
-#portfolio {
+#portfolio, #contact {
 	color: #2c3e50;
 }
 
-#portfolio .divider .line {
+#portfolio .divider .line, #contact .divider .line {
 	background: #2c3e50;
 }
 
@@ -130,6 +136,10 @@ section {
 	opacity: 1;
 }
 
+.modal-body .close:hover {
+	opacity: .75;
+}
+
 .modal-title {
 	font-size: 2.25rem;
 	line-height: 2rem;
@@ -139,18 +149,14 @@ section {
 	padding: 4rem 1rem;
 }
 
-.modal-body button {
+.btn-theme {
 	background: #1abc9c;
 	color: white;
 	border-radius: .5rem;
 	border: 2px solid #1abc9c;
 }
 
-.modal-body .close:hover {
-	opacity: .75;
-}
-
-.modal-body button:hover {
+.btn-theme:hover {
 	background: #159a80;
 	color: white;
 	border-color: #159a80;
@@ -159,10 +165,6 @@ section {
 #about {
 	padding-top: 6rem;
 }
-
-/*#about div div:nth-child(2) div p {
-	max-width: 25rem;
-}*/
 
 .btn-dl {
 	background: #1abc9c;
@@ -175,6 +177,69 @@ section {
 .btn-dl:hover {
 	background: white;
 }
+
+.form-group {
+	border-bottom: 1px solid #e9ecef;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+}
+
+.form-input {
+	padding: 0;
+	font-size: 1.5rem;
+	width: 100%;
+	border-width: 0;
+}
+
+form .btn-theme {
+	padding: 1rem 1.75rem;
+	font-size: 1.25rem;
+}
+
+textarea {
+	resize: none;
+}
+
+input:focus, textarea:focus {
+	outline-width: 0;
+}
+
+.form-group label {
+	font-size: .85em;
+	color: #212529;
+	visibility: hidden;
+}
+
+.form-group input,.form-group textarea {
+	order:2;
+	margin-bottom: 2rem;
+}
+
+.form-group label {
+	order: 1;
+}
+.form-group p {
+	order: 3;
+}
+
+.form-group input:valid:not(#email) + label, .form-group textarea:valid + label {
+	visibility: visible;
+}
+
+p.invalid {
+	display: none;
+	margin-left: 40px;
+}
+
+.form-group input#email:valid ~ p {
+	display: none;
+}
+
+.form-group input:focus + label, .form-group textarea:focus + label {
+	color: #1abc9c;
+}
+
 
 
 @media (min-width: 992px) {

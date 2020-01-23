@@ -185,6 +185,10 @@ section {
 	margin-bottom: 0;
 }
 
+.form-group:nth-child(4) {
+	margin-bottom: 1.5rem;
+}
+
 .form-input {
 	padding: 0;
 	font-size: 1.5rem;
@@ -240,7 +244,39 @@ p.invalid {
 	color: #1abc9c;
 }
 
+footer {
+	background: #2c3e50;
+	color: white;
+	padding: 5rem 0;
+}
 
+.footer-text {
+	font-size: 1.25rem;
+}
+
+.social {
+	font-size: 1.25rem;
+	width: 3.25rem;
+	height: 3.25rem;
+	color: white;
+	margin: 0 0.25rem;
+	border:2px solid white;
+	border-radius: 50%;
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social:hover{
+	background: white;
+	color: #1a252f;
+}
+
+.copyright {
+	padding: 1.5rem 0;
+	background: #1a252f;
+	color: white;
+}
 
 @media (min-width: 992px) {
 	#mainNav .navbar-brand {
